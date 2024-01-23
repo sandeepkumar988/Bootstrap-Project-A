@@ -1,0 +1,204 @@
+:root{
+    --white:#fff;
+    --category:#EAE4DE;
+    --tranding:#E5E9F2;
+    --black:#000;
+    --gold:goldenrod;
+}
+html{
+    scroll-behavior: smooth;
+    transition: all 0.5s linear;
+}
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+.banner_info{
+    left:25%;
+    transform: translate(-50%,-50%);
+}
+.banner_info h4{
+    font-family: 'Grape Nuts', cursive;
+}
+.banner_info h1{
+    font-size: 5.5rem !important;
+}
+.overlay{
+    transition:all 0.3s;
+    background-color: rgba(0,0,0,.2);
+}
+.btn1{
+    border: 0.1rem solid var(--white) !important;
+    border-radius: 0 !important;
+}
+.Product .container .row .col-lg-3 .product_content{
+    bottom: -20%;
+    transition: 0.3s;
+}
+.Product .container .row .col-lg-3:hover .product_content{
+    bottom: 5%;
+}
+.Category{
+    background-color: var(--category);
+}
+.Category .container .row .col-lg-3 .icon_info,
+.quality .container .row .col-lg-3 .icon_info{
+    right: -20%;
+    transition: 0.3s;
+}
+
+.Category .container .row .col-lg-3:hover .icon_info,
+.quality .container .row .col-lg-3:hover .icon_info{
+    top: 5% !important;
+    right: 2%;
+}
+
+.cont-_bt{
+    bottom: -20%;
+    transition: 0.3s;
+}
+
+.Category .container .row .col-lg-3:hover .cont-_bt,
+.quality .container .row .col-lg-3:hover .cont-_bt{
+    bottom: 0%;
+}
+
+.Collection .container .row,
+.quality .container .row{
+    justify-content: space-between;
+}
+.Collection .container .row .col-lg-8:hover img,
+.Collection .container .row .col-lg-4:hover img,
+.Category .container .row .col-lg-3:hover .category_img img,
+.quality .container .row .col-lg-3:hover .category_img img{
+    transform: scale(1.1);
+    transition: 0.3s ;
+    cursor: pointer;
+}
+.coll_img{
+    height: 650px;
+}
+.tran_color{
+    background-color: var(--tranding);
+}
+.trending_img1{
+    width:35%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.insta_section .container-fluid .row .col-lg-2:hover .overlay{
+    width: 100%;
+    cursor: pointer;
+}
+
+.insta_section .container-fluid .row .col-lg-2:hover img{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+.icon_info i:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--white) !important;
+    background: var(--black)!important;
+}
+.footer .container .row .col-lg-3 ul li:hover{
+    color: var(--gold) !important;
+}
+.carousel-control-next, .carousel-control-prev{
+    width: 5% !important;
+}
+
+@media (width<= 576px) {
+    .carousel-item img{
+        height: 100vh !important;
+        object-fit: cover !important;
+    }
+    .banner_info{
+        left: 40% !important;
+    }
+    .banner_info h1{
+        font-size: 2rem !important;
+    }
+    .banner_info .btn{
+        font-size: 1rem !important;
+        padding: 0.5rem 1.5rem !important;
+    }
+
+    /* navbar */
+    .navbar-nav{
+        margin-top: 1rem !important;
+        background: var(--white) !important;
+        line-height: 1 !important;
+        padding: 3rem 0;   
+        height: 50vh;     
+    }
+
+    .navbar-nav .nav-link{
+        padding:0 2rem;
+        font-size: 1rem !important;
+        color: var(--black) !important;
+    }
+}
+
+@media (width<=768px) and (width>=576px){
+    .carousel-item img{
+        height: 100vh !important;
+        object-fit: cover !important;
+    }
+    .banner_info{
+        left: 30% !important;
+    }
+    .banner_info h1{
+        font-size: 3rem !important;
+    }
+    .banner_info .btn{
+        font-size: 1rem !important;
+        padding: 0.5rem 1.5rem !important;
+    }
+        /* navbar */
+    .navbar-nav{
+        margin-top: 1rem !important;
+        background: var(--white) !important;
+        line-height: 1 !important;
+        padding: 3rem 0;   
+        height: 50vh;
+        width: 100%;    
+    }
+    .navbar-nav .nav-link{
+        padding:0 2rem;
+        font-size: 1rem !important;
+        color: var(--black) !important;
+    }
+}
+
+@media (width<=992px) and (width>=768px){
+    .carousel-item img{
+        height: 100vh !important;
+        object-fit: cover !important;
+    }
+    .banner_info{
+        left: 32% !important;
+    }
+    .banner_info h1{
+        font-size: 5rem !important;
+    }
+    .banner_info .btn{
+        font-size: 1rem !important;
+        padding: 0.5rem 1.5rem !important;
+    }
+    .navbar-nav{
+        margin-top: 1rem !important;
+        background: var(--white) !important;
+        line-height: 1 !important;
+        padding: 3rem 0;   
+        height: 50vh;
+        width: 100%;    
+    }
+    .navbar-nav .nav-link{
+        padding:0 2rem;
+        font-size: 1rem !important;
+        color: var(--black) !important;
+    }
+}
